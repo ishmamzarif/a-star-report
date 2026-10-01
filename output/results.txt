@@ -1,0 +1,18 @@
+map: 64 districts, 133 edges, straight-line h admissible=True consistent=True
+  dijkstra expanded 50  cost 215.1 km  path Dhaka > Narsingdi > Brahmanbaria > Habiganj > Moulvibazar > Sylhet
+  greedy   expanded  6  cost 243.2 km  path Dhaka > Narsingdi > Kishoreganj > Habiganj > Moulvibazar > Sylhet
+  astar    expanded  8  cost 215.1 km  path Dhaka > Narsingdi > Brahmanbaria > Habiganj > Moulvibazar > Sylhet
+  h(Dhaka) = 191.2 km, exact remaining = 215.1 km
+grid: 16 x 10, 21 wall cells, 4-connected, unit cost, Manhattan h
+  dijkstra expanded 137  frontier   2  cost 19
+  greedy   expanded  48  frontier  23  cost 35
+  astar    expanded  81  frontier  36  cost 19
+eight cities, original h: admissible=True consistent=True  expanded DNBHS  path DNBHS  cost 8
+eight cities, manhattan h: admissible=False consistent=False  expanded DBHS  path DBHS  cost 10
+eight cities, dijkstra: expanded DGNBKHCS  path DNBHS  cost 8
+eight cities, greedy: expanded DBHS  path DBHS  cost 10
+  exact remaining cost h*: D=8, N=6, B=5, H=3, S=0, G=9, K=7, C=8
+counterexample: admissible=True consistent=False
+  closed set: order sbcat path sbct cost 6
+  reopening:  order sbcact path sact cost 5
+game map: cheapest route 17 steps, cost 17; straight route 11 steps, cost 19
